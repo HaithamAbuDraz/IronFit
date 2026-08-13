@@ -146,3 +146,126 @@ img {
   background: var(--color-accent);
   border-color: var(--color-accent);
 }
+
+/* ============================================
+    NAVIGATION
+   ============================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--color-bg-nav);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 0;
+  transition: var(--transition-speed);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.logo span {
+  color: var(--color-accent);
+}
+
+/* checkbox hack for mobile/tablet */
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: opacity var(--transition-speed);
+}
+
+.hamburger .fa-bars,
+.hamburger .fa-times {
+  font-size: 28px;
+  color: #fff;
+  transition:
+    color var(--transition-speed),
+    transform var(--transition-speed);
+}
+
+.hamburger .fa-bars {
+  display: inline-block;
+}
+.hamburger .fa-times {
+  display: none;
+}
+
+#menu-toggle:checked ~ .hamburger .fa-bars {
+  display: none;
+}
+#menu-toggle:checked ~ .hamburger .fa-times {
+  display: inline-block;
+}
+
+.hamburger:hover .fa-bars,
+.hamburger:hover .fa-times {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color var(--transition-speed);
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width var(--transition-speed);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.nav-cta {
+  background: var(--color-accent);
+  padding: 10px 24px;
+  border-radius: var(--radius-btn);
+  font-weight: 700;
+  transition: var(--transition-speed);
+}
+
+.nav-cta:hover {
+  background: var(--color-accent-hover);
+  transform: scale(1.04);
+}
+
+.nav-cta::after {
+  display: none !important;
+}
