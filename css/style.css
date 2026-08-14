@@ -473,3 +473,46 @@ img {
   color: var(--color-text-secondary);
   font-size: 0.95rem;
 }
+
+/* ============================================
+    FEATURES
+   ============================================ */
+.features {
+  background: var(--color-bg-secondary);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: var(--color-bg-card);
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: var(--transition-speed);
+  border: 1px solid var(--color-border-light);
+}
+
+.feature-item:hover {
+  border-color: var(--color-accent);
+  transform: scale(1.02);
+}
+
+.feature-item i {
+  font-size: 2.6rem;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.feature-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.feature-item p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
