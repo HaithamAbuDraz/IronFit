@@ -369,3 +369,61 @@ img {
   object-fit: cover;
   aspect-ratio: 4/3;
 }
+
+/* ============================================
+    ABOUT
+   ============================================ */
+.about {
+  background: var(--color-bg-secondary);
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.about-text h2 {
+  font-size: var(--font-size-section-title);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.about-text h2 span {
+  color: var(--color-accent);
+}
+
+.about-text p {
+  color: var(--color-text-body);
+  margin-bottom: 16px;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.about-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.about-features li i {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
