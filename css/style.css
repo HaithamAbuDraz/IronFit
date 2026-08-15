@@ -556,16 +556,31 @@ img {
 .testimonial-card .author {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .testimonial-card .author img {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--color-border-light);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft drop shadow */
+  object-position: center 20%;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition:
+    border-color var(--transition-speed),
+    box-shadow var(--transition-speed),
+    transform var(--transition-speed);
+}
+
+.testimonial-card:hover .author img {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 12px rgba(230, 57, 70, 0.35);
+  transform: scale(1.04);
 }
 
 .testimonial-card .author h4 {
