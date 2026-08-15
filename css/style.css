@@ -840,3 +840,89 @@ img {
 .contact-form .btn {
   width: 100%;
 }
+
+/* ============================================
+    FOOTER
+   ============================================ */
+.footer {
+  background: #080808;
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-brand .logo {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  color: var(--color-text-muted);
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  background: var(--color-bg-card);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: var(--transition-speed);
+  font-size: 1.1rem;
+}
+
+.footer-social a:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--color-text-muted);
+  transition: var(--transition-speed);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent);
+}
+
+.footer-bottom {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid var(--color-border);
+  margin-top: 20px;
+  color: var(--color-text-dark);
+  font-size: 0.9rem;
+}
+
+.footer-bottom i.fa-heart {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+}
