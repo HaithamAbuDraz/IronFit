@@ -732,3 +732,111 @@ img {
   color: var(--color-text-secondary);
   margin-top: -4px;
 }
+
+/* ============================================
+    CONTACT
+   ============================================ */
+.contact {
+  background: var(--color-bg-secondary);
+}
+
+.contact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-size: var(--font-size-section-title);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.contact-info h2 span {
+  color: var(--color-accent);
+}
+
+.contact-info p {
+  color: var(--color-text-body);
+  margin-bottom: 32px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #ddd;
+}
+
+.contact-details li i {
+  width: 40px;
+  height: 40px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  background: var(--color-bg-card);
+  padding: 36px 32px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border-light);
+}
+
+.contact-form h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 16px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #ccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border-light);
+  background: var(--color-bg-primary);
+  color: #fff;
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  transition: var(--transition-speed);
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-border-focus);
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  width: 100%;
+}
