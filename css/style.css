@@ -941,3 +941,133 @@ img {
   color: var(--color-accent);
   font-size: 0.8rem;
 }
+
+/* ==========================================================================
+    RESPONSIVE DESIGN & MEDIA QUERIES
+    Standard Breakpoints: 
+    - Laptop / Large Tablet: max-width: 1024px
+    - Tablet / Small Screens: max-width: 768px
+    - Mobile Phones: max-width: 480px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+    1. LAPTOP & LARGE TABLET (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  /* Variable Overrides for Scaling */
+  :root {
+    --font-size-hero: 3.2rem;
+    --font-size-section-title: 2.2rem;
+    --spacing-section: 70px;
+    --container-padding: 20px;
+  }
+
+  /* Navigation: Switch to Hamburger Menu */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 11, 11, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom: 1px solid var(--color-border);
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      padding 0.3s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    max-height: 520px;
+    opacity: 1;
+    visibility: visible;
+    padding: 16px 20px 24px;
+    text-align: center;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid var(--color-border-light);
+    text-align: center;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+    margin-top: 14px;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 10px;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-cta {
+    display: inline-block;
+    width: auto;
+    padding: 8px 24px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    gap: 40px;
+  }
+
+  .hero::before {
+    width: 450px;
+    height: 450px;
+  }
+
+  /* About Section */
+  .about .container {
+    gap: 40px;
+  }
+
+  /* Contact Section */
+  .contact .container {
+    gap: 40px;
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* Footer Layout */
+  .footer .container {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    max-width: 500px;
+  }
+}
