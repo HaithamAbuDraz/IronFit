@@ -1071,3 +1071,191 @@ img {
     max-width: 500px;
   }
 }
+
+/* --------------------------------------------------------------------------
+    2. TABLET & MOBILE LANDSCAPE (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  /* Variable Overrides */
+  :root {
+    --font-size-hero: 2.5rem;
+    --font-size-section-title: 2rem;
+    --spacing-section: 60px;
+    --container-padding: 18px;
+    --radius-card: 16px;
+  }
+
+  /* Typography & Headings */
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 36px;
+    padding-inline: 8px;
+  }
+
+  /* Hero Section: Single-Column Stacking */
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content p {
+    font-size: 1.05rem;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 28px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+
+  .hero-stats .stat h3 {
+    font-size: 1.9rem;
+  }
+
+  .hero-image {
+    order: -1;
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 440px;
+    aspect-ratio: 16 / 10;
+  }
+
+  /* About Section: Stacked */
+  .about .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-image img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  /* Services / Classes Grid */
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  /* Features Grid */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .feature-item {
+    padding: 24px 16px;
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Pricing Grid */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 28px;
+  }
+
+  .pricing-card {
+    padding: 32px 24px;
+  }
+
+  /* FAQ Accordion */
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .faq-list summary {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .faq-list .answer {
+    padding: 0 20px 16px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* Contact Section: Stacked Form & Details */
+  .contact .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-details {
+    align-items: center;
+  }
+
+  .contact-details li {
+    text-align: left;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .contact-form {
+    padding: 28px 20px;
+  }
+
+  /* Footer Layout */
+  .footer {
+    padding: 48px 0 24px;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin-inline: auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
