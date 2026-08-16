@@ -86,17 +86,27 @@ IronFit/
 │
 ├── assets/
 │   ├── css/
-│   │   └── style.css            # Core stylesheet, animations, and responsive media queries
+│   │   └── style.css                    # Core stylesheet, animations, and responsive media queries
 │   │
-│   └── images/
-│       ├── hero-image.jpg       # Main hero banner image
-│       ├── about-image.jpg      # Facility and training overview photo
-│       ├── member1.jpg          # Testimonial avatar (Michael R.)
-│       ├── member2.jpg          # Testimonial avatar (Sarah K.)
-│       └── member3.jpg          # Testimonial avatar (James L.)
+│   ├── icon/                            # Website favicons & web app icons
+│   │   ├── apple-touch-icon.png         # Apple touch icon (180x180)
+│   │   ├── favicon-96x96.png            # Standard PNG favicon (96x96)
+│   │   ├── favicon.ico                  # Multi-resolution legacy ICO favicon
+│   │   ├── favicon.svg                  # Scalable vector SVG favicon
+│   │   ├── web-app-manifest-192x192.png # Web app icon (192x192)
+│   │   └── web-app-manifest-512x512.png # Web app icon (512x512)
+│   │
+│   └── images/                          # Optimized WebP hero, feature & avatar images
+│       ├── about-image.webp             # Facility and training overview photo
+│       ├── hero-image.webp              # Main hero banner image
+│       ├── member1.webp                 # Testimonial avatar (Michael R.)
+│       ├── member2.webp                 # Testimonial avatar (Sarah K.)
+│       └── member3.webp                 # Testimonial avatar (James L.)
 │
-├── index.html                   # Semantic HTML5 landing page
-└── README.md                    # Project documentation
+├── index.html                           # Semantic HTML5 landing page
+├── LICENSE                              # MIT License file
+├── README.md                            # Project documentation
+└── site.webmanifest                     # Web Application Manifest configuration
 ```
 
 ---
